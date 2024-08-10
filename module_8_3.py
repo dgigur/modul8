@@ -41,7 +41,7 @@ except IncorrectCarNumbers as exc:
 
 try:
     second = Car('Model2', 300, 'т001тр')
-    print(f'{first.model} успешно создан')
+    print(f'{second.model} успешно создан')
 except IncorrectVinNumber as exc:
     print(exc.message)
 except IncorrectCarNumbers as exc:
@@ -49,6 +49,7 @@ except IncorrectCarNumbers as exc:
 
 try:
     third = Car('Model3', 2020202, 'нет номера')
+    print(f'{third.model} успешно создан')
 except IncorrectVinNumber as exc:
     print(exc.message)
 except IncorrectCarNumbers as exc:
